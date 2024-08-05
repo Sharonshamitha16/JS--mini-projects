@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "sans-serif";
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    border: 4px solid black;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 10px;
+}
+
+.bill_ip {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input {
+    border: 2px solid rgb(187, 179, 179);
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(148, 143, 137);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(116, 110, 110);
+}
+
+.tip_total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .tip_total {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.adjust-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub,
+.add1,
+.add2 {
+    position: absolute;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.sub {
+    left: 20.75%;
+    margin-top: -0.3px;
+}
+
+.add1 {
+    right: 61.5%;
+    top: 37.35%;
+}
+
+.add2 {
+    right: 61.5%;
+    top: 52.45%;
+}
+
+h3 {
+    margin: 10%;
+    padding: 8%;
+    font-size: 28px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}

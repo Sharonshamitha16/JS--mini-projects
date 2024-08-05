@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TIP CALCULATOR</h1>
+    </header>
+    <div class="container bg-success-subtle">
+        <div class="col">
+            <label for="bill" class="bill">Bill</label>
+            <input type="number" id="bill" class="bill_ip" value="0.0">
+
+            <label for="tip" class="bill">Tip %</label>
+            <div class="adjust-buttons">
+                <button type="button" id="decreaseTip">-</button>
+                <input type="number" id="tip" class="bill_ip" value="15">
+                <button type="button" id="increaseTip">+</button>
+            </div>
+
+            <label for="people" class="bill">Number of People</label>
+            <div class="adjust-buttons">
+                <button type="button" id="decreasePeople">-</button>
+                <input type="number" id="people" class="bill_ip" value="1">
+                <button type="button" id="increasePeople">+</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3 class="tip_total">Tip <span id="dollar_tip">Rs.0.00</span></h3>
+            <h3 class="tip_total">Total <span id="dollar_total">Rs.0.00</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+
+</html>

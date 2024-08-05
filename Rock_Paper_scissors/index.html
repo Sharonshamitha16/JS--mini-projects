@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container  bg-success-subtle mt-5 ">
+        <h1>ROCK-PAPER-SCISSORS</h1>
+        <div class="choices ">
+            <button onclick="playGame('Rock')"> ✊ </button>
+            <button onclick="playGame('Paper')">🤚 </button>
+            <button onclick="playGame('Scissors')">✌️</button>
+        </div>
+        <div class="container">
+            <div  id="PlayerDisplay"  class=" PlayerDisplay "></div>
+            <div  id="computerDisplay"  class="computerDisplay"> </div>
+            <div id="resultDisplay"   class="resultDisplay"></div>
+        </div>
+<div class="ScoreDisplay">
+    <span id="PlayerscoreDisplay">Player Score: 0</span><br>
+    <span id="ComputerScoreDisplay">Computer Score :0</span>
+
+</div>
+    </div>
+</body>
+
+    <script src="script.js"></script>
+
+</html>
